@@ -30,8 +30,8 @@ jobs:
       - name: Build app
         run: npm run build
 
-      - name: Run database migrations
-        run: npx drizzle-kit migrate
+      - name: Run migrations
+        run: npm run db:migrate
 
       - name: Authenticate to GCP
         id: auth
